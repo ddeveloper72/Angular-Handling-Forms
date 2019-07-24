@@ -12,6 +12,6 @@ export class AppComponent {
   }
 
   onSubmit(form: NgForm) {
-    console.log('Submitted!');
+    console.log(form);
   }
 }
