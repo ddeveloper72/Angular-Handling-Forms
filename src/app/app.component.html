@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+    <div class="col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
       <form (ngSubmit)="onSubmit()" #f="ngForm" >
         <div id="user-data" 
         ngModelGroup="userData"
@@ -72,13 +72,13 @@
       </form>
       <hr>
       <div class="row" *ngIf="submitted">
-        <div class="col-xs-12">
+        <div class="col-sm-12">
           <h3>Your Data</h3>
           <ul class="list-group">
-            <li class="list-group-item">Username: {{ user.username }}</li>
-            <li class="list-group-item">Mail: {{ user.email }}</li>
-            <li class="list-group-item">Secret Question: {{ user.secretQuestion }}</li>
-            <li class="list-group-item">Answer: {{ user.answer }}</li>
+            <li class="list-group-item mb-2">Username: {{ user.username }}</li>
+            <li class="list-group-item mb-2">Mail: {{ user.email }}</li>
+            <li class="list-group-item mb-2">Secret Question: {{ user.secretQuestion }}</li>
+            <li class="list-group-item mb-2">Answer: {{ user.answer }}</li>
             <li class="list-group-item">Gender: {{ user.gender}}</li>
           </ul>
         </div>
